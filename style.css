@@ -1,213 +1,122 @@
 /* 基礎設定 */
 body {
-    font-family: '微軟正黑體', 'Arial', sans-serif;
-    background-color: #fce4ec; /* 柔和的粉色背景 */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
+    font-family: '微軟正黑體', 'Arial', sans-serif;
+    background-color: #fce4ec; /* 柔和的粉色背景 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
 }
 
 .container {
-    background-color: #ffffff;
-    padding: 40px;
-    border-radius: 15px; /* 更大的圓角 */
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* 更明顯的陰影 */
-    width: 100%;
-    max-width: 650px;
-    text-align: center;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px; /* 更大的圓角 */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* 更明顯的陰影 */
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
 }
 
 /* 標題與副標 */
 h1 {
-    color: #e91e63; /* 婚禮主題色：深粉紅 */
-    padding-bottom: 10px;
-    margin-bottom: 5px;
-    font-size: 2em;
+    color: #e91e63; /* 婚禮主題色：深粉紅 */
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    font-size: 2em;
 }
 
 .subtitle {
-    color: #6a1b9a; /* 紫色文字，增添優雅 */
-    margin-bottom: 25px;
-    font-size: 1.1em;
+    color: #6a1b9a; /* 紫色文字，增添優雅 */
+    margin-bottom: 25px;
+    font-size: 1.1em;
 }
 
 .heart-icon {
-    color: #ff4081; /* 心形圖案顏色 */
-    font-size: 1.2em;
+    color: #ff4081; /* 心形圖案顏色 */
+    font-size: 1.2em;
 }
 
 /* 婚紗照樣式 */
 .photo-container {
-    position: relative; 
-    margin-bottom: 30px;
-    overflow: hidden; 
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    overflow: hidden; /* 確保圖片在容器內 */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .main-photo {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover; /* 確保圖片覆蓋容器，可能裁切 */
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* 確保圖片覆蓋容器，可能裁切 */
 }
-
-/* 婚紗照上疊加文字的樣式 */
-.photo-container {
-    position: relative; /* 關鍵：設定為相對定位，讓子元素可以絕對定位 */
-    margin-bottom: 30px;
-    overflow: hidden; 
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.photo-overlay-text {
-    position: absolute; 
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* 關鍵修正：將 flex 改為 grid 或直接 text-align center */
-    display: grid; /* 使用 grid 佈局 */
-    place-items: center; /* 讓內容在網格內完全置中 */
-    grid-template-rows: auto auto; /* 自動調整兩行的高度 */
-    /* text-align: center; 可以取代上面 flex 和 grid 的置中，但 grid 更靈活 */
-
-    background-color: rgba(0, 0, 0, 0.3); /* 將透明度從 0.45 降到 0.3，讓圖片更明顯 */
-    color: white; 
-    font-weight: bold;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
-    z-index: 10; 
-    border-radius: 12px;
-    line-height: 1.2; /* 調整行高，避免文字太擠 */
-}
-
-/* 可以稍微調整 h2 的樣式 */
-.photo-overlay-text h2 {
-    color: white; 
-    margin: 0; 
-    padding: 0;
-    border-bottom: none; 
-    font-size: 2.8em; 
-    letter-spacing: 3px; 
-    animation: pulseText 2s infinite alternate; 
-}
-
-/* 新增英文文字的樣式 */
-.photo-overlay-text p {
-    color: white;
-    margin: 0; /* 移除預設 margin */
-    padding-top: 5px; /* 與上方中文間隔 */
-    font-size: 1.4em; /* 英文稍小 */
-    font-weight: normal; /* 英文可以不用那麼粗 */
-    opacity: 0.9;
-    letter-spacing: 1px;
-    
-    /* ***** 新增動畫效果 ***** */
-    animation: pulseText 2s infinite alternate !important; /* 與 h2 使用相同的動畫 */
-    /* ************************* */
-}
-
-    /* ***** 動態文字樣式調整 ***** */
-    font-size: 2.8em; /* 字體再加大一點點 */
-    letter-spacing: 3.5px; /* 增加字體間距 */
-    
-    /* 應用動畫 */
-    animation: pulseText 2s infinite alternate; /* 應用 pulseText 動畫，2秒一次，無限重複，交替方向 */
-    /* ***************************** */
-}
-
-/* 確保圖片正確顯示在背景 */
-.main-photo {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover; /* 或 contain，根據您的選擇 */
-}
-
 
 /* 輸入框樣式 */
 #search-input {
-    width: calc(100% - 20px);
-    padding: 18px;
-    margin-bottom: 25px;
-    border: 3px solid #f8bbd0; /* 淺粉色邊框 */
-    border-radius: 30px; /* 圓潤的輸入框 */
-    font-size: 1.2em;
-    text-align: center;
-    box-sizing: border-box;
+    width: calc(100% - 20px);
+    padding: 18px;
+    margin-bottom: 25px;
+    border: 3px solid #f8bbd0; /* 淺粉色邊框 */
+    border-radius: 30px; /* 圓潤的輸入框 */
+    font-size: 1.2em;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 #search-input:focus {
-    border-color: #ff80ab; /* 聚焦時的亮粉色 */
-    outline: none;
-    box-shadow: 0 0 8px rgba(255, 128, 171, 0.6);
+    border-color: #ff80ab; /* 聚焦時的亮粉色 */
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 128, 171, 0.6);
 }
 
 /* 結果區塊樣式 */
 #results-container {
-    margin-top: 20px;
-    text-align: left;
+    margin-top: 20px;
+    text-align: left;
 }
 
 .result-item {
-    background-color: #ffebee; /* 淺紅/粉紅背景 */
-    border: 1px solid #ffcdd2; 
-    padding: 18px;
-    margin-bottom: 12px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.2em;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    background-color: #ffebee; /* 淺紅/粉紅背景 */
+    border: 1px solid #ffcdd2; 
+    padding: 18px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 .result-item strong.name {
-    color: #e91e63;
-    font-weight: bold;
+    color: #e91e63;
+    font-weight: bold;
 }
 
 .result-item strong.seat {
-    color: #4caf50; /* 綠色保持座位號碼突出 */
-    font-size: 1.5em;
-    font-weight: 900;
-    background-color: #e8f5e9;
-    padding: 8px 18px;
-    border-radius: 8px;
+    color: #4caf50; /* 綠色保持座位號碼突出 */
+    font-size: 1.5em;
+    font-weight: 900;
+    background-color: #e8f5e9;
+    padding: 8px 18px;
+    border-radius: 8px;
 }
 
 .no-results {
-    color: #888;
-    padding: 30px;
-    font-style: italic;
-    border: 1px dashed #f8bbd0;
-    border-radius: 10px;
+    color: #888;
+    padding: 30px;
+    font-style: italic;
+    border: 1px dashed #f8bbd0;
+    border-radius: 10px;
 }
 
 /* 頁腳 */
 .footer {
-    margin-top: 30px;
-    padding-top: 15px;
-    border-top: 1px solid #f8bbd0;
-    color: #888;
-    font-size: 0.9em;
-
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #f8bbd0;
+    color: #888;
+    font-size: 0.9em;
 }
-
-/* ***** 定義 CSS 動畫 (請將此段加到 style.css 文件的最底部) ***** */
-@keyframes pulseText {
-    from {
-        transform: scale(1); /* 從正常大小開始 */
-        opacity: 0.8; /* 從稍低透明度開始 */
-    }
-    to {
-        transform: scale(1.08); /* 放大到 1.08 倍 */
-        opacity: 1; /* 變成完全不透明 */
-    }
-}
-/* *************************************************************** */
-
-Fix: Overlay text opacity and animation check
