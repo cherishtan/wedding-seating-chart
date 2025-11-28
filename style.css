@@ -104,8 +104,9 @@ h1 {
     font-weight: normal; /* 英文可以不用那麼粗 */
     opacity: 0.9;
     letter-spacing: 1px;
+    
     /* ***** 新增動畫效果 ***** */
-    animation: pulseText 2s infinite alternate; /* 與 h2 使用相同的動畫 */
+    animation: pulseText 2s infinite alternate !important; /* 與 h2 使用相同的動畫 */
     /* ************************* */
 }
 
@@ -210,5 +211,6 @@ h1 {
 /* *************************************************************** */
 
 Fix: Overlay text opacity and animation check
+
 
 
