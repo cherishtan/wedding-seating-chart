@@ -38,14 +38,6 @@ h1 {
     font-size: 1.2em;
 }
 
-/* 婚紗照樣式 */
-.photo-container {
-    position: relative; 
-    margin-bottom: 30px;
-    overflow: hidden; 
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
 
 .main-photo {
     width: 100%;
@@ -116,7 +108,7 @@ h1 {
     /* 應用動畫 */
     animation: pulseText 2s infinite alternate; /* 應用 pulseText 動畫，2秒一次，無限重複，交替方向 */
     /* ***************************** */
-}
+
 
 /* 確保圖片正確顯示在背景 */
 .main-photo {
@@ -207,9 +199,6 @@ h1 {
         opacity: 1; /* 變成完全不透明 */
     }
 }
-/* *************************************************************** */
-
-Fix: Overlay text opacity and animation check
 
 
 
