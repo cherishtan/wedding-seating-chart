@@ -75,6 +75,9 @@ h1 {
     font-size: 2.8em; 
     letter-spacing: 3px; 
     animation: pulseText 2s infinite alternate; 
+     /* ***** 新增動畫效果 ***** */
+    animation: pulseText 2s infinite alternate; 
+    /* ************************* */
 }
 
 /* 新增英文文字的樣式 */
@@ -86,6 +89,9 @@ h1 {
     font-weight: normal; /* 英文可以不用那麼粗 */
     opacity: 0.9;
     letter-spacing: 1px;
+    /* ***** 新增動畫效果 ***** */
+    animation: pulseText 2s infinite alternate; 
+    /* ************************* */
 }
 
 .main-photo {
@@ -172,3 +178,4 @@ h1 {
         opacity: 1; 
     }
 }
+
