@@ -100,7 +100,7 @@ h1 {
     /* ***** 新增動畫效果 ***** */
     animation: pulseText 2s infinite alternate !important; /* 與 h2 使用相同的動畫 */
     /* ************************* */
-
+}
     /* ***** 動態文字樣式調整 ***** */
     font-size: 2.8em; /* 字體再加大一點點 */
     letter-spacing: 3.5px; /* 增加字體間距 */
@@ -199,6 +199,7 @@ h1 {
         opacity: 1; /* 變成完全不透明 */
     }
 }
+
 
 
 
