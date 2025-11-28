@@ -1,0 +1,122 @@
+/* 基礎設定 */
+body {
+    font-family: '微軟正黑體', 'Arial', sans-serif;
+    background-color: #fce4ec; /* 柔和的粉色背景 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px; /* 更大的圓角 */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* 更明顯的陰影 */
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+}
+
+/* 標題與副標 */
+h1 {
+    color: #e91e63; /* 婚禮主題色：深粉紅 */
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    font-size: 2em;
+}
+
+.subtitle {
+    color: #6a1b9a; /* 紫色文字，增添優雅 */
+    margin-bottom: 25px;
+    font-size: 1.1em;
+}
+
+.heart-icon {
+    color: #ff4081; /* 心形圖案顏色 */
+    font-size: 1.2em;
+}
+
+/* 婚紗照樣式 */
+.photo-container {
+    margin-bottom: 30px;
+    overflow: hidden; /* 確保圖片在容器內 */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-photo {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* 確保圖片覆蓋容器，可能裁切 */
+}
+
+/* 輸入框樣式 */
+#search-input {
+    width: calc(100% - 20px);
+    padding: 18px;
+    margin-bottom: 25px;
+    border: 3px solid #f8bbd0; /* 淺粉色邊框 */
+    border-radius: 30px; /* 圓潤的輸入框 */
+    font-size: 1.2em;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#search-input:focus {
+    border-color: #ff80ab; /* 聚焦時的亮粉色 */
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 128, 171, 0.6);
+}
+
+/* 結果區塊樣式 */
+#results-container {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.result-item {
+    background-color: #ffebee; /* 淺紅/粉紅背景 */
+    border: 1px solid #ffcdd2; 
+    padding: 18px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.result-item strong.name {
+    color: #e91e63;
+    font-weight: bold;
+}
+
+.result-item strong.seat {
+    color: #4caf50; /* 綠色保持座位號碼突出 */
+    font-size: 1.5em;
+    font-weight: 900;
+    background-color: #e8f5e9;
+    padding: 8px 18px;
+    border-radius: 8px;
+}
+
+.no-results {
+    color: #888;
+    padding: 30px;
+    font-style: italic;
+    border: 1px dashed #f8bbd0;
+    border-radius: 10px;
+}
+
+/* 頁腳 */
+.footer {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #f8bbd0;
+    color: #888;
+    font-size: 0.9em;
+}
