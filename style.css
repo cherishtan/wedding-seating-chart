@@ -71,7 +71,7 @@ h1 {
     display: flex; /* 使用 flexbox 讓文字居中 */
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.45); /* 半透明黑色背景，讓文字更清晰 */
+    background-color: rgba(0, 0, 0, 0.3); /* 半透明黑色背景，讓文字更清晰 */
     color: white; /* 白色文字 */
     font-weight: bold;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* 文字陰影，增加立體感 */
@@ -197,3 +197,5 @@ h1 {
     }
 }
 /* *************************************************************** */
+
+Fix: Overlay text opacity and animation check
