@@ -104,11 +104,14 @@ h1 {
     font-weight: normal; /* 英文可以不用那麼粗 */
     opacity: 0.9;
     letter-spacing: 1px;
+    /* ***** 新增動畫效果 ***** */
+    animation: pulseText 2s infinite alternate; /* 與 h2 使用相同的動畫 */
+    /* ************************* */
 }
 
     /* ***** 動態文字樣式調整 ***** */
     font-size: 2.8em; /* 字體再加大一點點 */
-    letter-spacing: 3px; /* 增加字體間距 */
+    letter-spacing: 3.5px; /* 增加字體間距 */
     
     /* 應用動畫 */
     animation: pulseText 2s infinite alternate; /* 應用 pulseText 動畫，2秒一次，無限重複，交替方向 */
@@ -207,4 +210,5 @@ h1 {
 /* *************************************************************** */
 
 Fix: Overlay text opacity and animation check
+
 
