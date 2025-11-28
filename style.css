@@ -75,7 +75,7 @@ h1 {
     grid-template-rows: auto auto; /* 自動調整兩行的高度 */
     /* text-align: center; 可以取代上面 flex 和 grid 的置中，但 grid 更靈活 */
 
-    background-color: rgba(0, 0, 0, 0.3); /* 將透明度從 0.45 降到 0.3，讓圖片更明顯 */
+    background-color: rgba(0, 0, 0, 0.45); /* 將透明度從 0.45 降到 0.3，讓圖片更明顯 */
     color: white; 
     font-weight: bold;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
@@ -108,7 +108,6 @@ h1 {
     /* ***** 新增動畫效果 ***** */
     animation: pulseText 2s infinite alternate !important; /* 與 h2 使用相同的動畫 */
     /* ************************* */
-}
 
     /* ***** 動態文字樣式調整 ***** */
     font-size: 2.8em; /* 字體再加大一點點 */
@@ -211,6 +210,7 @@ h1 {
 /* *************************************************************** */
 
 Fix: Overlay text opacity and animation check
+
 
 
 
