@@ -1,13 +1,13 @@
 // --- 1. 資料庫：請在此修改您的姓名和座位資料 ---
 const seatData = [
-    { name: "王小明", seat: "A01" },
-    { name: "李大華", seat: "B12" },
-    { name: "陳美玲", seat: "C05" },
-    { name: "林志傑", seat: "A02" },
-    { name: "吳雅君", seat: "B08" },
-    { name: "黃小恩", seat: "C10" },
-    { name: "鄭偉", seat: "A03" },
-    { name: "張明華", seat: "B01" },
+    { name: "黃瑜琛", seat: "A01" },
+    { name: "陳貽瑱", seat: "B12" },
+    { name: "陳宏泰", seat: "C05" },
+    { name: "陳淑娥", seat: "A02" },
+    { name: "黃建成", seat: "B08" },
+    { name: "A", seat: "C10" },
+    { name: "B", seat: "A03" },
+    { name: "C", seat: "B01" },
     // 您可以繼續新增更多資料：
     // { name: "新增姓名", seat: "座位號碼" },
 ];
@@ -71,4 +71,5 @@ window.onload = function() {
             目前無搜尋結果。請開始輸入姓名。
         </div>
     `;
+
 }
