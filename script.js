@@ -51,7 +51,7 @@ const seatData = [
 { name: "謝孟承", seat: "第9桌" },
 { name: "游凱翔", seat: "第9桌" },
 { name: "詹閔傑", seat: "第9桌" },
-{ name: "洪邦溢", seat: "第9桌" },
+{ name: "連振雄", seat: "第9桌" },
 { name: "黃惠儀", seat: "第9桌" },
 { name: "林俊諺", seat: "第9桌" },
 { name: "林宜蓁", seat: "第9桌" },
@@ -177,6 +177,9 @@ const seatData = [
 { name: "陳菽霖", seat: "主桌" },
 { name: "陳淑惠", seat: "主桌" },
 { name: "謝詠濬", seat: "主桌" },
+{ name: "陳慶明", seat: "主桌" },
+{ name: "陳羿霖", seat: "主桌" },
+{ name: "楊進財", seat: "主桌" },
 { name: "黃建成", seat: "主桌" },
 { name: "陳淑娥", seat: "主桌" }
 ];
