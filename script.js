@@ -47,6 +47,7 @@ const seatData = [
 { name: "沈仁宗", seat: "第8桌" },
 { name: "王培珞", seat: "第8桌" },
 { name: "呂佳明", seat: "第8桌" },
+{ name: "張展嘉", seat: "第8桌" },    
 { name: "徐鎮鴻", seat: "第8桌" },
 { name: "謝孟承", seat: "第9桌" },
 { name: "游凱翔", seat: "第9桌" },
