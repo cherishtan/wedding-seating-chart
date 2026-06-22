@@ -94,7 +94,6 @@ const seatData = [
 { name: "Monica", seat: "第14桌" },
 { name: "王素鄉", seat: "第15桌" },
 { name: "黃衍儒", seat: "第15桌" },
-{ name: "黃國洲", seat: "第15桌" },
 { name: "黃玲慧", seat: "第15桌" },
 { name: "許育慈", seat: "第15桌" },
 { name: "李阿美", seat: "第16桌" },
